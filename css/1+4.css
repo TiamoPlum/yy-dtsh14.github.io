@@ -1,0 +1,222 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.main-layout{
+    position:absolute;
+    width: 1280px;
+}
+.pic{
+    position: relative;
+    
+    margin-left: 25%;
+    z-index: -999;
+}
+#main{
+    position: relative;
+    float: left;
+    margin-top: 100px;
+    margin-left: 10%;
+    background-image: url("../picture/map.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1000px;
+}
+#f1{
+    position: relative;
+    float: left;
+    margin-top: 100px;
+    margin-left: 10%;
+    background-image: url("../picture/2.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px;
+
+}
+#main1{
+    position: relative;
+    float: left;
+    margin-left:35% ;
+}
+.text_box1{
+    width: 500px;
+    height: auto;
+    float:right;
+    position: relative;
+    margin-right: 30px;
+    margin-top: 80px;
+}
+.text_box1 h2{
+    text-align: center;
+    font-size: 20px;
+}
+.text_box22{
+    width: 400px;
+    height: auto;
+    float:right;
+    position: relative;
+    margin-right: 30px;
+    margin-top: 80px;
+    background-image:url("../picture/可回收垃圾") ; 
+    background-position: center;
+    background-size: 400px;
+}
+.text_box22 h2{
+    text-align: center;
+    font-size: 24px;
+    color: cornflowerblue;
+}
+.text_box22 p{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(179, 109, 29);
+}
+.part_1
+.part_1 img{
+position: relative;
+    float: left;
+
+}
+.img_1{
+    width: 300px;
+    position: relative;
+    float: left;
+    margin-top: 50px;
+    margin-left: 250px;
+}
+.img_2{
+    width: 100px;
+    position: absolute;
+    margin-left:200px ;
+    float: left;
+}
+.img_3{
+    width: 150px;
+    position:absolute;
+    margin-top: 250px;
+    margin-left:500px ;
+    float: right;
+}
+.img_4{
+    width:200px;
+    position:absolute;
+    margin-top: 150px;
+    margin-right:100px ;
+    float: right;
+}
+.text_box2{
+    width: 800px;
+    float: left;
+    margin-left: 25%;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.text_box2 p{
+    font-size: 12px;
+}
+.text_box3{
+    width: 800px;
+    float: left;
+    margin-left: 25%;
+    position: relative;
+    margin-bottom: 50px;
+}
+.text_box3 h2{
+    text-align: center;
+    font-size: 20px;
+}
+.text_box3 p{
+    font-size: 12px;
+}
+.part_p1{
+    width: 500px;
+    height: auto;
+    position: relative;
+    float: left;
+    margin-left: 33%;
+    margin-top: 30px;
+}
+.part_p33{
+    width: 200px;
+    height: auto;
+    position: relative;
+    float: right;
+    margin-right: 33%;
+    margin-top: 30px;
+}
+.part_2{
+    background-color: rgb(105, 187, 148);
+}
+
+
+
+#main3{
+    position: relative;
+    float: left;
+    margin-top: 100px;
+    margin-left: 5%;
+}
+.text_p1{
+    width: 800px;
+    float: left;
+    margin-left: 25%;
+    position: relative;
+
+}
+.text_p1 h2{
+    font-size: 20px;
+    text-align: center;
+}
+.text_p1 p{
+margin-top: 10px;
+
+}
+.text_p2{
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 500px;
+    float: right;
+    position: relative;
+    margin-bottom: 100px;
+}
+.text_3{
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 300px;
+    float: right;
+    position: relative;
+    margin-bottom: 100px;
+}
+.text_3 h2{
+    font-size: 20px;
+    text-align: center;
+}
+.text_p2 h2{
+    font-size: 20px;
+    text-align: center;
+}
+.text_p2 p{
+margin-top: 10px;
+}
+.text_p2 h3{
+    margin-top: 50px;
+    font-size: 18px;
+    }
+#pic_1 li{
+    list-style-image:url(/picture/厨余垃圾.png);
+}
+#pic_2 li{
+    list-style-image:url(/picture/不可回收.png);
+}
+#pic_3 li{
+    list-style-image:url(/picture/可回收.png);
+}
+#pic_4 li{
+    list-style-image:url(/picture/其他垃圾.png);
+}
+.ul_1{
+    float:right;
+    margin-right: 80px;
+    position: relative;
+}

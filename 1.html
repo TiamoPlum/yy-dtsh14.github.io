@@ -1,0 +1,324 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer="">var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,s=[],r=[],o=!0,a=function(e,i,n,s,r,o,a){var l=this;this.name=e,this.funcName=i,this.parameters=null===n?null:n instanceof Array?n:[n],this.isBlock=s,this.blockedBy=r,this.deleteWhenComplete=o,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.isTimeDelay=!1,this.process=function(){u("... func = "+e),l.isInitialized=!0,l.isComplete=!0,u("... func.apply: "+e);var i=l.funcName.split("."),n=null;i.length>3||(n=3===i.length?window[i[0]][i[1]][i[2]]:2===i.length?window[i[0]][i[1]]:window[l.funcName]),null!=n&&n.apply(null,this.parameters),!0===l.deleteWhenComplete&&delete t[e],!0===l.isBlock&&(u("----- F'D: "+l.name),f())}},l=function(e,i,t,n,s,r,o){var a=this;this.name=e,this.path=i,this.async=s,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=o,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)?window.__ezScriptHost+e:e},this.process=function(){a.isInitialized=!0,u("... file = "+e);var i=document.createElement("script");i.src=this.getSrc(this.path),!0===s?i.async=!0:!0===r&&(i.defer=!0),i.onerror=function(){u("----- ERR'D: "+a.name),a.isError=!0,!0===a.isBlock&&f()},i.onreadystatechange=i.onload=function(){var e=i.readyState;u("----- F'D: "+a.name),e&&!/loaded|complete/.test(e)||(a.isComplete=!0,!0===a.isBlock&&f())},document.getElementsByTagName("head")[0].appendChild(i)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=o&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return u(e.name+" blocked = TIME DELAY!"),!0;if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var s=e.blockedBy[i];if(!1===t.hasOwnProperty(s))return u(e.name+" blocked = "+s),!0;if(!0===e.proceedIfError&&!0===t[s].isError)return!1;if(!1===t[s].isComplete)return u(e.name+" blocked = "+s),!0}return!1}function u(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function f(){++e>200||(u("let's go"),m(s),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?u(t.name+": error"):!0===t.isComplete?u(t.name+": complete already"):!0===t.isInitialized&&u(t.name+": initialized already"):t.process()}}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,u("TDELAY -----"),f()}),5e3)}),!1),{addFile:function(e,i,n,o,a,c,h,u){var f=new l(e,i,n,o,a,c,h);!0===u?s[e]=f:r[e]=f,t[e]=f,d(f)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,u(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,d(n)},addFunc:function(e,n,o,l,c,h,u,f,m){!0===h&&(e=e+"_"+i++);var p=new a(e,n,o,l,c,u,f);!0===m?s[e]=p:r[e]=p,t[e]=p,d(p)},addDelayFunc:function(e,i,n){var s=new a(e,i,n,!1,[],!0,!0);s.isTimeDelay=!0,u(e+" ...  FUNCTION! TDELAY"),r[e]=s,t[e]=s,d(s)},items:t,processAll:f,setallowLoad:function(e){o=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?u(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new c(e,!0);u("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer=""></script>
+        <!-- basic -->
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>低碳生活-碳排放</title>
+    <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="stylesheet" href="css/1+4.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <link rel="stylesheet" href="#">
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script src="js/echarts.js"></script>
+  </head>
+  <body class="main-layout">
+    <!-- header -->
+    <div class="header">
+        <div class="container">
+           <div class="row d_flex">
+              <div class=" col-md-2 col-sm-3 logo_section">
+                 <div class="full">
+                    <div class="center-desk">
+                       <div class="logo">
+                        <img src="picture/图标.svg" alt="">
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-lg-8 col-md-10 col-sm-9 ">
+                 <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarsExample04">
+                       <ul class="navbar-nav mr-auto">
+                          <li class="nav-item ">
+                             <a class="nav-link" href="index.html">首页</a>
+                          </li>
+                          <li class="nav-item active">
+                             <a class="nav-link" href="1.html">碳排放量</a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" href="2.html">居民意识</a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" href="3.html">碳中和</a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" href="4.html">垃圾分类</a>
+                          </li>
+                       </ul>
+                    </div>
+                 </nav>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="part_1">
+        <img class="img_1"src="picture/烟囱.svg" alt="">
+        <img class="img_2"src="picture/CO2.svg" alt="">
+        <img class="img_3"src="picture/CO2.svg" alt="">
+        <img class="img_4"src="picture/CO2.svg" alt="">
+        <div class="text_box1">
+          <h2>什么是碳排放</h2>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碳排放是关于温室气体排放的一个总称或简称。温室气体中z主要的气体是二氧化碳，因此用碳（Carbon）一词作为代表。
+            多数科学家和政府承认温室气体已经并将继续为地球和人类带来灾难，
+            所以"（控制)碳排放"、“碳中和”这样的术语就成为容易被大多数人所理解、接受、并采取行动的文化基础。</p>
+         </div>
+    </div>
+     
+    <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+    <div class="part_2">
+    <div id="main" style="width: 1200px;height:600px;">
+    </div>
+    
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart = echarts.init(document.getElementById('main'));
+
+      // 指定图表的配置项和数据
+      option = {
+      title: {
+        text: "全球碳排放量TOP5",
+        subtext: "Global carbon emissions",
+        left: "center",
+        textStyle: {
+          fontSize: 24
+        },
+        subtextStyle: {
+          fontSize: 15,
+          align: "center"
+        }
+      },
+      legend: {
+      type: "scroll",
+        align: "left",
+        orient: "vertical",
+        itemGap: 16,
+        itemStyle: {},
+        right: 50,
+        data: ["中国", "美国","印度","俄罗斯","日本"]
+      },
+      xAxis: {
+      min:0,
+      max:100,
+      show: false
+      },
+      yAxis: {
+      min:0,
+      max:120,
+      show: false
+      },
+      series: [
+        {
+        name: "日本",
+        data: [
+          [30, 92, 1482200000, "Japan", "日本"]
+        ],
+        type: "scatter",
+        symbolSize: function(data) {
+          return Math.sqrt(data[2]) / 5e2;
+        },
+        symbol: "circle",
+        cursor: "pointer",
+        label: {
+          show: false,
+          distance: 4
+        }
+      }, 
+      {
+        name: "俄罗斯",
+        data: [
+          [16, 60, 1027000000, "Russia","俄罗斯"]
+        ],
+        type: "scatter",
+        symbolSize: function(data) {
+          return Math.sqrt(data[2]) / 5e2;
+        },
+        symbol: "circle",
+        cursor: "pointer",
+        label: {
+          show: false,
+          distance: 4
+        }
+      },
+      
+      ,
+      {
+        name: "印度",
+        data: [
+          [19, 110, 2302300000, "India", "印度"]
+        ],
+        type: "scatter",
+        symbolSize: function(data) {
+          return Math.sqrt(data[2]) / 5e2;
+        },
+        symbol: "circle",
+        cursor: "pointer",
+        label: {
+          show: false,
+          distance: 4
+        }
+      },
+      {
+        name: "美国",
+        data: [
+          [48, 65, 4457200000, "America", "美国"]
+        ],
+        type: "scatter",
+        symbolSize: function(data) {
+          return Math.sqrt(data[2]) / 5e2;
+        },
+        symbol: "circle",
+        cursor: "pointer",
+        label: {
+          show: false,
+          distance: 4
+        }
+      },
+      {
+        name: "中国",
+        type: "scatter",
+        data: [
+          [18, 85, 9899300000, "China", "中国"],
+
+        ],
+        symbolSize: function(data) {
+          return Math.sqrt(data[2]) / 5e2;
+        },
+        symbol: "circle",
+        cursor: "pointer",
+        label: {
+          show: false,
+          distance: 4
+        }
+      }
+    ]
+    };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart.setOption(option);
+    </script>
+    <div class="text_box2">
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020年全球二氧化碳总计排放量为322.84亿吨，年均增长率下降6.3%。人口排名前三的中国、印度、美国其二氧化碳排放量也居于前三，
+        人口排名第三的美国，二氧化碳排放量为4457.2百万吨，高于印度二氧化碳排放量。</p>
+     </div>
+    </div>
+    <div id="main1" style="width: 600px;height:400px;">
+    </div>
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart1 = echarts.init(document.getElementById('main1'));
+ 
+ // 指定图表的配置项和数据
+ 
+ var data =[1027.0, 1482.2, 2302.300000, 4457.200000, 9899.300000];
+for (let i = 0; i < 5; ++i) {
+  data.push(Math.round(Math.random() * 200));
+}
+
+option1 = {
+  xAxis: {
+     name:'百万吨',
+     type:'value'
+   },
+  legend: {
+     data: ['碳排放量'],
+     show: false
+   },
+  yAxis: {
+    type: 'category',
+    data: ['日本','俄罗斯' , '印度', '美国', '中国'],
+    inverse: true,
+    animationDuration: 300,
+    animationDurationUpdate: 300,
+    max: 4// only the largest 3 bars will be displayed
+  },
+  toolbox: {
+    right:0,
+    top:"15%",
+    show: true,
+    feature: {
+      dataZoom: {
+        yAxisIndex: "none"
+      },
+      dataView: {
+        readOnly: false
+      },
+      magicType: {
+        type: ["line", "bar"]
+      },
+      restore: {},
+      saveAsImage: {}
+    },
+    orient: "vertical"
+  },
+  series: [
+    {
+      realtimeSort: true,
+      name: '中国',
+      type: 'bar',
+      colorBy: "data",
+      data: data,
+      label: {
+        show: true,
+        position: 'right',
+        valueAnimation: true
+      }
+    }
+  ],
+  animationDuration: 3000,
+  animationDurationUpdate: 3000,
+  animationEasing: 'linear',
+  animationEasingUpdate: 'linear'
+};
+
+function update() {
+  var data = option.series[0].data;
+  for (var i = 0; i < data.length; ++i) {
+    if (Math.random() > 0.9) {
+      data[i] += Math.round(Math.random() * 2000);
+    } else {
+      data[i] += Math.round(Math.random() * 200);
+    }
+  }
+  myChart1.setOption(option1);
+}
+
+setInterval(function() {
+  update();
+}, 3000);
+
+ // 使用刚指定的配置项和数据显示图表。
+ myChart1.setOption(option1);
+
+    </script>
+     <div class="text_box3">
+      <h2>碳排放的主要来源</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人类的任何活动都有可能造成碳排放，各种燃油、燃气、石蜡、煤炭、天然气在使用过程中都会产生大量二氧化碳，
+        城市运转、人们日常生活、交通运输(飞机、火车、汽车等)也会排放大量二氧化碳。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碳排放的主要来源是化石燃料。化石燃料也称矿石燃料,是一种烃或烃的衍生物的混合物,包括的天然资源有煤、石油、天然气、油页岩、油砂以及海下的可燃冰等。化石燃料在燃烧过程中,碳转变为二氧化碳进入大气,增加了温室气体的排放量。
+           煤炭、石油、天然气等化石燃料使用的z为广泛,也是二氧化碳的主要来源。其中煤炭的含炭量非常丰富,煤炭的燃烧会排放大量的二氧化碳。</p>
+     </div>
+    </div>
+    <script type='text/javascript' style='display:none;' async="">
+    </script>
+    
+    <script type="text/javascript" data-cfasync="false"></script>	
+  </body>
+</html>

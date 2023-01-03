@@ -1,0 +1,130 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer="">var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,s=[],r=[],o=!0,a=function(e,i,n,s,r,o,a){var l=this;this.name=e,this.funcName=i,this.parameters=null===n?null:n instanceof Array?n:[n],this.isBlock=s,this.blockedBy=r,this.deleteWhenComplete=o,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.isTimeDelay=!1,this.process=function(){u("... func = "+e),l.isInitialized=!0,l.isComplete=!0,u("... func.apply: "+e);var i=l.funcName.split("."),n=null;i.length>3||(n=3===i.length?window[i[0]][i[1]][i[2]]:2===i.length?window[i[0]][i[1]]:window[l.funcName]),null!=n&&n.apply(null,this.parameters),!0===l.deleteWhenComplete&&delete t[e],!0===l.isBlock&&(u("----- F'D: "+l.name),f())}},l=function(e,i,t,n,s,r,o){var a=this;this.name=e,this.path=i,this.async=s,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=o,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)?window.__ezScriptHost+e:e},this.process=function(){a.isInitialized=!0,u("... file = "+e);var i=document.createElement("script");i.src=this.getSrc(this.path),!0===s?i.async=!0:!0===r&&(i.defer=!0),i.onerror=function(){u("----- ERR'D: "+a.name),a.isError=!0,!0===a.isBlock&&f()},i.onreadystatechange=i.onload=function(){var e=i.readyState;u("----- F'D: "+a.name),e&&!/loaded|complete/.test(e)||(a.isComplete=!0,!0===a.isBlock&&f())},document.getElementsByTagName("head")[0].appendChild(i)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=o&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return u(e.name+" blocked = TIME DELAY!"),!0;if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var s=e.blockedBy[i];if(!1===t.hasOwnProperty(s))return u(e.name+" blocked = "+s),!0;if(!0===e.proceedIfError&&!0===t[s].isError)return!1;if(!1===t[s].isComplete)return u(e.name+" blocked = "+s),!0}return!1}function u(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function f(){++e>200||(u("let's go"),m(s),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?u(t.name+": error"):!0===t.isComplete?u(t.name+": complete already"):!0===t.isInitialized&&u(t.name+": initialized already"):t.process()}}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,u("TDELAY -----"),f()}),5e3)}),!1),{addFile:function(e,i,n,o,a,c,h,u){var f=new l(e,i,n,o,a,c,h);!0===u?s[e]=f:r[e]=f,t[e]=f,d(f)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,u(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,d(n)},addFunc:function(e,n,o,l,c,h,u,f,m){!0===h&&(e=e+"_"+i++);var p=new a(e,n,o,l,c,u,f);!0===m?s[e]=p:r[e]=p,t[e]=p,d(p)},addDelayFunc:function(e,i,n){var s=new a(e,i,n,!1,[],!0,!0);s.isTimeDelay=!0,u(e+" ...  FUNCTION! TDELAY"),r[e]=s,t[e]=s,d(s)},items:t,processAll:f,setallowLoad:function(e){o=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?u(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new c(e,!0);u("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer=""></script>
+      <!-- basic -->
+      
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>低碳生活可视化</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <link rel="stylesheet" href="#">
+   
+   <!-- body -->
+   <body class="main-layout">
+      <!-- header -->
+      <div class="header">
+         <div class="container">
+            <div class="row d_flex">
+               <div class=" col-md-2 col-sm-3 logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <img src="picture/图标.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-lg-8 col-md-10 col-sm-9 ">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item active">
+                              <a class="nav-link" href="index.html">首页</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="1.html">碳排放量</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="2.html">居民意识</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="3.html">碳中和</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="4.html">垃圾分类</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="about">
+         <div class="container">
+               <div class="box1">
+                  <div class="titlepage text_align_right rellax">
+                    
+                     <h2>碳排放</h2>
+                     <p>碳排放是关于温室气体排放的一个总称或简称。温室气体中最主要的组成部分是二氧化碳，
+                        因此人们筒单地将“碳排放”理解为“二氧化碳排放”。我们的日常生活一直都在排放二氧化碳，而如何通过有节制的生活，
+                        例如少用空调和暖气、少开车、少坐飞机等等，以及如何通过节能减误的技术来减少工厂和企业的碳排放量，成为本世纪初
+                        最重要的环保话题之一。
+                     </p>
+                     <a class="read_more" href="1.html" >查看数据</a>
+                  </div>
+               </div>
+            </div>
+
+         <div class="container">
+               <div class="box2">
+                  <div class="titlepage text_align_left rellax">
+                     <h2>居民意识</h2>
+                     <p>低碳意识可以树立低碳环保的价值观，生活中自觉履行环保公民责任 ,
+                        多树立碳预算、个人碳预算意识，多让自己为低碳经济发挥出应有的作用。
+                     </p>
+                     <a class="read_more" href="2.html">查看数据</a>
+                  </div>
+               </div>
+            </div>
+
+         <div class="container">
+               <div class="box3">
+                  <div class="titlepage text_align_right rellax" >
+                     <h2>碳中和</h2>
+                     <p>碳中和是指企业、团体或个人测算在一定时间内直接或间接产生的温室气体排放总量，
+                        通过植树造林、节能减排等形式，以抵消自身产生的二氧化碳排放量，实现二氧化碳“零排放”。
+                        它作为一种新型环保形式，被越来越多的大型活动和会议采用，
+                        推动了绿色的生活、生产，实现全社会绿色发展。
+                     </p>
+                     <a class="read_more" href="3.html">查看数据</a>
+                  </div>
+               </div>
+            </div>
+
+
+         <div class="container">
+               <div class="box4">
+                  <div class="titlepage text_align_left rellax" >
+                     <h2>垃圾分类</h2>
+                     <p>垃圾分类，一般是指按一定规定或标准将垃圾分类储存、投放和搬运，从而转变成公共资源的一系列活动的总称。
+                        垃圾分类的目的是提高垃圾的资源价值和经济价值，减少垃圾处理量和处理设备的使用，降低处理成本，减少土地资源的消耗，具有社会、经济、生态等几方面的效益。
+                     </p>
+                     <a class="read_more" href="4.html">查看数据</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      
+</body>
+</html>

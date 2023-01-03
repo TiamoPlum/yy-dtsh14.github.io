@@ -1,0 +1,204 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer="">var __ez=__ez||{};__ez.stms=Date.now();__ez.evt={};__ez.script={};__ez.ck=__ez.ck||{};__ez.template={};__ez.template.isOrig=true;__ez.queue=function(){var e=0,i=0,t=[],n=!1,s=[],r=[],o=!0,a=function(e,i,n,s,r,o,a){var l=this;this.name=e,this.funcName=i,this.parameters=null===n?null:n instanceof Array?n:[n],this.isBlock=s,this.blockedBy=r,this.deleteWhenComplete=o,this.isError=!1,this.isComplete=!1,this.isInitialized=!1,this.proceedIfError=a,this.isTimeDelay=!1,this.process=function(){u("... func = "+e),l.isInitialized=!0,l.isComplete=!0,u("... func.apply: "+e);var i=l.funcName.split("."),n=null;i.length>3||(n=3===i.length?window[i[0]][i[1]][i[2]]:2===i.length?window[i[0]][i[1]]:window[l.funcName]),null!=n&&n.apply(null,this.parameters),!0===l.deleteWhenComplete&&delete t[e],!0===l.isBlock&&(u("----- F'D: "+l.name),f())}},l=function(e,i,t,n,s,r,o){var a=this;this.name=e,this.path=i,this.async=s,this.defer=r,this.isBlock=t,this.blockedBy=n,this.isInitialized=!1,this.isError=!1,this.isComplete=!1,this.proceedIfError=o,this.isTimeDelay=!1,this.isPath=function(e){return"/"===e[0]&&"/"!==e[1]},this.getSrc=function(e){return void 0!==window.__ezScriptHost&&this.isPath(e)?window.__ezScriptHost+e:e},this.process=function(){a.isInitialized=!0,u("... file = "+e);var i=document.createElement("script");i.src=this.getSrc(this.path),!0===s?i.async=!0:!0===r&&(i.defer=!0),i.onerror=function(){u("----- ERR'D: "+a.name),a.isError=!0,!0===a.isBlock&&f()},i.onreadystatechange=i.onload=function(){var e=i.readyState;u("----- F'D: "+a.name),e&&!/loaded|complete/.test(e)||(a.isComplete=!0,!0===a.isBlock&&f())},document.getElementsByTagName("head")[0].appendChild(i)}},c=function(e,i){this.name=e,this.path="",this.async=!1,this.defer=!1,this.isBlock=!1,this.blockedBy=[],this.isInitialized=!0,this.isError=!1,this.isComplete=i,this.proceedIfError=!1,this.isTimeDelay=!1,this.process=function(){}};function d(e){!0!==h(e)&&0!=o&&e.process()}function h(e){if(!0===e.isTimeDelay&&!1===n)return u(e.name+" blocked = TIME DELAY!"),!0;if(e.blockedBy instanceof Array)for(var i=0;i<e.blockedBy.length;i++){var s=e.blockedBy[i];if(!1===t.hasOwnProperty(s))return u(e.name+" blocked = "+s),!0;if(!0===e.proceedIfError&&!0===t[s].isError)return!1;if(!1===t[s].isComplete)return u(e.name+" blocked = "+s),!0}return!1}function u(e){var i=window.location.href,t=new RegExp("[?&]ezq=([^&#]*)","i").exec(i);"1"===(t?t[1]:null)&&console.debug(e)}function f(){++e>200||(u("let's go"),m(s),m(r))}function m(e){for(var i in e)if(!1!==e.hasOwnProperty(i)){var t=e[i];!0===t.isComplete||h(t)||!0===t.isInitialized||!0===t.isError?!0===t.isError?u(t.name+": error"):!0===t.isComplete?u(t.name+": complete already"):!0===t.isInitialized&&u(t.name+": initialized already"):t.process()}}return window.addEventListener("load",(function(){setTimeout((function(){n=!0,u("TDELAY -----"),f()}),5e3)}),!1),{addFile:function(e,i,n,o,a,c,h,u){var f=new l(e,i,n,o,a,c,h);!0===u?s[e]=f:r[e]=f,t[e]=f,d(f)},addDelayFile:function(e,i){var n=new l(e,i,!1,[],!1,!1,!0);n.isTimeDelay=!0,u(e+" ...  FILE! TDELAY"),r[e]=n,t[e]=n,d(n)},addFunc:function(e,n,o,l,c,h,u,f,m){!0===h&&(e=e+"_"+i++);var p=new a(e,n,o,l,c,u,f);!0===m?s[e]=p:r[e]=p,t[e]=p,d(p)},addDelayFunc:function(e,i,n){var s=new a(e,i,n,!1,[],!0,!0);s.isTimeDelay=!0,u(e+" ...  FUNCTION! TDELAY"),r[e]=s,t[e]=s,d(s)},items:t,processAll:f,setallowLoad:function(e){o=e},markLoaded:function(e){if(e&&0!==e.length){if(e in t){var i=t[e];!0===i.isComplete?u(i.name+" "+e+": error loaded duplicate"):(i.isComplete=!0,i.isInitialized=!0)}else t[e]=new c(e,!0);u("markLoaded dummyfile: "+t[e].name)}},logWhatsBlocked:function(){for(var e in t)!1!==t.hasOwnProperty(e)&&h(t[e])}}}();__ez.evt.add=function(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n()},__ez.evt.remove=function(e,t,n){e.removeEventListener?e.removeEventListener(t,n,!1):e.detachEvent?e.detachEvent("on"+t,n):delete e["on"+t]};__ez.script.add=function(e){var t=document.createElement("script");t.src=e,t.async=!0,t.type="text/javascript",document.getElementsByTagName("head")[0].appendChild(t)};__ez.dot={};!function(){var e;__ez.vep=(e=[],{Add:function(i,t){__ez.dot.isDefined(i)&&__ez.dot.isValid(t)&&e.push({type:"video",video_impression_id:i,domain_id:__ez.dot.getDID(),t_epoch:__ez.dot.getEpoch(0),data:__ez.dot.dataToStr(t)})},Fire:function(){if(void 0===document.visibilityState||"prerender"!==document.visibilityState){if(__ez.dot.isDefined(e)&&e.length>0)for(;e.length>0;){var i=5;i>e.length&&(i=e.length);var t=e.splice(0,i),o=__ez.dot.getURL("/detroitchicago/grapefruit.gif")+"?orig="+(!0===__ez.template.isOrig?1:0)+"&v="+btoa(JSON.stringify(t));__ez.dot.Fire(o)}e=[]}}})}();</script><script data-ezscrex='false' data-cfasync='false' data-pagespeed-no-defer=""></script>
+        <!-- basic -->
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>低碳生活-垃圾分类</title>
+    <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="stylesheet" href="css/1+4.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <link rel="stylesheet" href="#">
+    <script src="js/echarts.js"></script>
+  </head>
+  <body class="main-layout">
+    <!-- header -->
+    <div class="header">
+        <div class="container">
+           <div class="row d_flex">
+              <div class=" col-md-2 col-sm-3 logo_section">
+                 <div class="full">
+                    <div class="center-desk">
+                       <div class="logo">
+                        <img src="picture/图标.svg" alt="">
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-lg-8 col-md-10 col-sm-9 ">
+                 <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarsExample04">
+                       <ul class="navbar-nav mr-auto">
+                          <li class="nav-item ">
+                             <a class="nav-link" href="index.html">首页</a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" href="1.html">碳排放量</a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" href="2.html">居民意识</a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" href="3.html">碳中和</a>
+                          </li>
+                          <li class="nav-item  active">
+                             <a class="nav-link" href="4.html">垃圾分类</a>
+                          </li>
+                       </ul>
+                    </div>
+                 </nav>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="text_p1">
+      <h2>垃圾分类与低碳有何关系？</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“对于有机物，来自大地的回到大地；其他东西，则来自产品的回到产品。建立这两个循环体系，我们低碳目的也就达到了。”</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实行垃圾分类后，可以针对不同类型的垃圾安排合理的处理方式，增加回收利用效率，减少碳排放。以回收利用价值相对较高的厨余垃圾为例，
+         根据相关研究，通过土地利用，厨余垃圾厌氧处理后的沼渣所含碳可以固定在土壤中或被植物利用。如果将沼渣焚烧掉，则这部分碳将转为碳排放，
+         1公斤沼渣中的碳将产生3.6~3.7公斤的碳排放，按照一个城市的垃圾处理项目800吨/天的处理规模计算，如果沼渣全部焚烧，
+         则仅此一项就会增加二氧化碳排放约10万吨/年。另外，将源头分类好的垃圾进行处理后可以生产绿色天然气，并替代化石燃料，也将大幅减少碳排放量。
+      </p>
+   </div>
+
+    
+    <!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+    <div class="part_p1"><img src="picture/垃圾分类.png" alt=""></div>
+    <div id="main3" style="width: 600px;height:400px;">
+   </div>
+   <script type="text/javascript">
+     // 基于准备好的dom，初始化echarts实例
+     var myChart = echarts.init(document.getElementById('main3'));
+
+     // 指定图表的配置项和数据
+     option = {
+      toolbox: {
+    show: true,
+    feature: {
+      dataZoom: {
+        yAxisIndex: "none"
+      },
+      dataView: {
+        readOnly: false
+      },
+      magicType: {
+        type: ["line", "bar"]
+      },
+      restore: {},
+      saveAsImage: {}
+    },
+    orient: "vertical"
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      // Use axis to trigger tooltip
+      type: 'shadow' // 'shadow' as default; can also be 'line' or 'shadow'
+    }
+  },
+  legend: {},
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  xAxis: {
+    type: 'value'
+  },
+  yAxis: {
+    type: 'category',
+    data: ['2015', '2016', '2017', '2018', '2019', '2020']
+  },
+  series: [
+    {
+      name: '可回收垃圾',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: true
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [15.6, 15.16, 15.42, 15.24, 16.03, 16.16]
+    },
+    {
+      name: '厨余垃圾',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: true
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [51.04, 47.98, 44.76, 42.76, 38.5, 38.05],
+    },
+    {
+      name: '其他垃圾',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: true
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [33.16, 36.61, 39.58, 41.77, 45.27, 45.61]
+    },
+    {
+      name: '有害垃圾',
+      type: 'bar',
+      stack: 'total',
+      label: {
+        show: true
+      },
+      emphasis: {
+        focus: 'series'
+      },
+      data: [0.2, 0.25, 0.24, 0.23, 0.2, 0.2, 0.18],
+    },
+  ]
+};
+
+  
+
+
+     // 使用刚指定的配置项和数据显示图表。
+     myChart.setOption(option);
+   </script>
+   <div class="text_p2">
+      <h2>垃圾分类</h2>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;生活垃圾成份较为复杂，
+         主要包括：餐厨厨余垃圾、废纸、废塑料、废织物、废金属、废玻璃、陶瓷碎片、砖瓦渣土、粪便、废家具、废旧电器、庭院废物等。
+      </p>
+      <div class="ul_1">
+         <h3>在我国，广义上生活垃圾被分为三大类：</h3>
+         <class="style_1">
+            <div id="pic_1"><li >厨余垃圾(丢弃不用的菜叶、剩菜、剩饭、果皮、蛋壳、茶渣、骨头等)</li></div>
+            <div id="pic_2"><li >有害垃圾（废灯管、废油漆、杀虫剂、废弃化妆品、过期药品、废电池、废灯泡、废水银温度计等）</li></div>
+            <div id="pic_3"><li >可回收物(废纸 、废弃塑料瓶、 废金属 、废包装物、废旧纺织物、废弃电器电子产品、废玻璃、废 纸塑铝复合包装)</li></div>
+            <div id="pic_4"><li >其他垃圾(砖瓦陶瓷、渣土、卫生间废纸、瓷器碎片、动物排泄物、一次性用品等难以回收的废弃物)</li></div>
+         </ul>
+      </div>
+   </div>
+ </body>
+</html>

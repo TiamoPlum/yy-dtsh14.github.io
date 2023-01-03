@@ -1,0 +1,228 @@
+/*--------------------------------------------------------------------- 
+File Name: responsive.css 
+---------------------------------------------------------------------*/
+
+@media (min-width: 1343px) and (max-width: 1500px) {}
+
+@media (min-width: 1200px) and (max-width: 1342px) {
+    .owen h1 {
+        font-size: 150px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .owen h1 {
+        font-size: 100px;
+        line-height: 102px;
+    }
+    ul.top_infomation li {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 0px 6px;
+    }
+    .owen h1 {
+        font-size: 90px;
+        line-height: 84px;
+    }
+    .d_none {
+        display: none;
+    }
+    ul.top_infomation li {
+        padding: 0 6px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .header {
+        padding: 40px 0px;
+    }
+    .owen h1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+    .grid {
+        display: grid;
+    }
+    .older1 {
+        order: -1;
+    }
+
+    .d_none {
+        display: none;
+    }
+
+    .footer {
+        background: #f64f00;
+        margin-top: 90px;
+    }
+    ul.social_icon {
+        padding-top: 40px;
+    }
+    ul.top_infomation li {
+        padding: 0 9px;
+        font-size: 18px;
+    }
+    .navigation.navbar {
+        float: right;
+        display: inherit !important;
+        padding: 0;
+        width: 100%;
+    }
+    .navigation .navbar-collapse {
+        background: #111111;
+        padding: 20px;
+        margin-top: 59px;
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+    }
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: #fff;
+        text-align: center;
+    }
+    .navigation.navbar-dark .navbar-toggler {
+        border: inherit;
+        float: right;
+        padding: 0;
+        width: 100%;
+        outline: inherit;
+        margin-top: 0px;
+    }
+
+    .logo_section .logo {
+    text-align: left;
+}
+
+.owen h1 {
+    font-size: 55px;
+    line-height: normal;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.about_img img {
+    height: auto;
+    margin-top: 10px;
+}
+
+.choclate_text p {
+    padding-right: 0;
+}
+
+.main_form {
+    margin-top: 0;
+}
+
+}
+
+@media (max-width: 575px) {
+
+.main_form {
+    margin-top: 0;
+}
+
+.choclate_text p {
+    padding-right: 0;
+}
+
+.owen h1 {
+    font-size: 55px;
+    line-height: normal;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.logo_section .logo {
+    text-align: left;
+}
+
+.about_img img {
+    height: auto;
+    margin-top: 10px;
+}
+
+    .header {
+        padding: 40px 0px;
+    }
+    .owen h1 {
+        font-size: 61px;
+        line-height: 57px;
+    }
+    .about_img {
+        margin-top: 30px;
+        text-align: left;
+    }
+    .grid {
+        display: grid;
+    }
+    .older1 {
+        order: -1;
+    }
+    .contact,
+    .sandwichs,
+    .Our_shop {
+        padding-top: 0;
+    }
+    .d_none {
+        display: none;
+    }
+    .footer_sho::before,
+    .contact_sho::before,
+    .left_sho::before,
+    .back_sho::before,
+    .right_sho::before {
+        position: inherit;
+        background: transparent;
+        height: inherit;
+    }
+    .footer {
+        background: #f64f00;
+        margin-top: 90px;
+    }
+    ul.social_icon {
+        padding-top: 40px;
+    }
+    ul.top_infomation li {
+        text-align: left;
+        display: block;
+        line-height: 49px;
+    }
+    .navigation.navbar {
+        float: right;
+        display: inherit !important;
+        padding: 0;
+        width: 100%;
+        margin-top: -35px;
+    }
+    .navigation .navbar-collapse {
+        background: #111111;
+        padding: 20px;
+        margin-top: 58px;
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+    }
+    .navigation.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+        color: #fff;
+        text-align: center;
+    }
+    .navigation.navbar-dark .navbar-toggler {
+        float: right;
+        border: inherit;
+        margin-top: 1px;
+        padding: 0;
+        outline: inherit;
+    }
+    .navigation.navbar-dark .navbar-toggler-icon {
+        background: url(../image/menu_icon.png);
+        background-repeat: no-repeat;
+        width: 48px;
+    }
+}
